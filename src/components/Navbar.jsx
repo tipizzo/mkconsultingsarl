@@ -25,9 +25,9 @@ const Navbar = () => {
             <img src={assets.logo} alt="" style={{width: "200px", height: "130px"}} />
             <ul className='hidden md:flex gap-7 text-white'>
                 <a href='#Header' className='cursor-pointer hover:text-gray-400'>Home</a>
-                <a href='#Header' className='cursor-pointer hover:text-gray-400'>About</a>
-                <a href='#Header' className='cursor-pointer hover:text-gray-400'>Projects</a>
-                <a href='#Header' className='cursor-pointer hover:text-gray-400'>Testimonials</a>
+                <a href='#About' className='cursor-pointer hover:text-gray-400'>About</a>
+                <a href='#Projects' className='cursor-pointer hover:text-gray-400'>Projects</a>
+                <a href='#Testimonials' className='cursor-pointer hover:text-gray-400'>Testimonials</a>
             </ul>
             <img onClick={() => setShowMobileMenu(true)} src={assets.menu_icon} className='md:hidden w-7 cursor-pointer' />
         </div>
