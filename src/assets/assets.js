@@ -1,4 +1,4 @@
-import logo from './mklogo.jpg'
+import logo from './mklogo1.png'
 import logo_dark from './logo_dark.svg'
 import cross_icon from './cross_icon.svg'
 import menu_icon from './menu_icon.svg'
