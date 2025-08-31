@@ -77,26 +77,26 @@ export const projectsData = [
 
   export const testimonialsData = [
     {
-        name: "Donald Jackman",
-        title: "Marketing Manager",
+        name: "Ir. KAHASHA M. Yves",
+        title: "Directeur Gérant",
         image: profile_img_1,
-        alt: "Portrait of Donald Jackman",
+        alt: "Portrait of Yves",
         rating: 5,
         text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
     },
     {
-        name: "Richard Nelson",
-        title: "UI/UX Designer",
+        name: "Ir. KABANGA Y. Venant",
+        title: "Directeur Gérant Adjoint",
         image: profile_img_2,
-        alt: "Portrait of Richard Nelson",
+        alt: "Portrait of Venant",
         rating: 4,
         text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
     },
     {
-        name: "James Washington",
-        title: "Co-Founder",
+        name: "Ir. YEMBA Axel",
+        title: "Directeur Technique",
         image: profile_img_3,
-        alt: "Portrait of James Washington",
+        alt: "Portrait of Axel",
         rating: 5,
         text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
     }
