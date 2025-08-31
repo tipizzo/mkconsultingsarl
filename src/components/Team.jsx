@@ -13,7 +13,8 @@ const Team = () => {
                 <div key={index} className='max-w-[340px] border border-gray-200 shadow-xl rounded px-8 py-12 text-center'>
                     <img className='w-20 h-20 rounded-full mx-auto mb-4' src={testimonial.image} alt={testimonial.alt} />
                     <h2 className='text-xl text-gray-700 font-medium'>{testimonial.name}</h2>
-                    <p className='text-gray-500 mb-4 text-sm'>{testimonial.title}</p>
+                    <p className='text-gray-500 mb-2 text-sm'>{testimonial.title}</p>
+                    <a className='flex justify-center mb-2 cursor-pointer' href={testimonial.linkdin}><img src={assets.linkedin} className='w-5 h-5 rounded' /></a>
                     <p className='text-gray-600'>{testimonial.text}</p>
                 </div>
             ))}
