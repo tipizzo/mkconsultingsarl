@@ -1,9 +1,15 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { motion } from 'framer-motion'
 
 const About = () => {
     return (
-        <div className='flex flex-col items-center justify-center container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden' id="About">
+        <motion.div
+        initial={{opacity: 0, x:200}}
+        transition={{duration: 1.5}}
+        whileInView={{opacity: 1, x:0}}
+        viewport={{once: true}}
+        className='flex flex-col items-center justify-center container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden' id="About">
             <h1 className='text-2xl sm:text-4xl font-bold mb-6'>A Propos de <span className='underline underline-offset-4 decoration-1 under font-light'>M&K Consulting SARL</span></h1>
             <p className='text-gray-500 max-w-80 text-center mb-8'>Fondée en avril 2015 à Bukavu, en République Démocratique du Congo (RDC), <b>M&K Consulting SARL</b> est une société spécialisée dans le conseil, la conception et la réalisation de projets de construction. Forte de son expertise locale et régionale, l’entreprise s’engage à offrir des solutions innovantes et durables, adaptées aux besoins d’une clientèle variée, allant du secteur privé aux institutions publiques.
 
@@ -35,7 +41,7 @@ const About = () => {
                     <button className='bg-blue-600 text-white px-8 py-2 rounded-md'>En savoir plus</button>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

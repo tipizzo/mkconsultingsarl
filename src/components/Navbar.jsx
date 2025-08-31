@@ -21,13 +21,13 @@ const Navbar = () => {
 
   return (
     <div className='absolute top-0 left-0 w-full z-10'>
-        <div className='container mx-auto flex justify-between items-center py-4 px-4 md:px-8 lg:px-16 bg-transparent'>
-            <img src={assets.logo} alt="" style={{width: "200px", height: "130px"}} />
+        <div className='container mx-auto flex justify-between items-center py-4 px-4 md:px-8 lg:px-6 bg-transparent'>
+            <img src={assets.logo} alt="" style={{width: "180px", height: "110px"}} />
             <ul className='hidden md:flex gap-7 text-white'>
-                <a href='#Header' className='cursor-pointer hover:text-gray-400'>Accueil</a>
-                <a href='#About' className='cursor-pointer hover:text-gray-400'>A Propos de nous</a>
-                <a href='#Projects' className='cursor-pointer hover:text-gray-400'>Projets</a>
-                <a href='#Team' className='cursor-pointer hover:text-gray-400'>Notre équipe</a>
+                <a href='#Header' className='cursor-pointer hover:text-gray-400 font-bold'>Accueil</a>
+                <a href='#About' className='cursor-pointer hover:text-gray-400 font-bold'>A Propos de nous</a>
+                <a href='#Projects' className='cursor-pointer hover:text-gray-400 font-bold'>Projets</a>
+                <a href='#Team' className='cursor-pointer hover:text-gray-400 font-bold'>Notre équipe</a>
             </ul>
             <img onClick={() => setShowMobileMenu(true)} src={assets.menu_icon} className='md:hidden w-7 cursor-pointer' />
         </div>
