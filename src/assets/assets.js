@@ -13,18 +13,17 @@ import mers from './mers.jpg'
 import mugunga from './mugunga.jpg'
 import coming_soon from './coming_soon.png'
 import coming_soon_color from './coming_soon_color.png'
-import project_img_1 from './project_img_1.jpg'
-import project_img_2 from './project_img_2.jpg'
-import project_img_3 from './project_img_3.jpg'
-import project_img_4 from './project_img_4.jpg'
-import project_img_5 from './project_img_5.jpg'
-import project_img_6 from './project_img_6.jpg'
-import profile_img_1 from './profile_img_1.png'
-import profile_img_2 from './profile_img_2.png'
-import profile_img_3 from './profile_img_3.png'
 import worker from './worker.jpg'
 import linkedin from './linkedin.png'
 import workers from './workers.png'
+import gazon_synth from "./gazon_synth.png"
+import residence from './residence.png'
+import bodega from './bodega.png'
+import maintenance from './maintenance.png'
+import kalambo from './kalambo.png'
+import adduction from './adduction.png'
+import mur from './mur.png'
+import mur2 from './mur2.png'
 
 export const assets = {
     logo,
@@ -33,89 +32,88 @@ export const assets = {
     star_icon,
     header_img,
     brand_img,
-    project_img_1,
-    project_img_2,
-    project_img_3,
-    project_img_4,
     left_arrow,
     right_arrow,
     worker,
     mklogoimg,
     linkedin,
     mugunga,
-    workers
+    workers,
+    gazon_synth,
+    residence,
+    bodega,
+    maintenance,
+    kalambo,
+    mur,
+    mur2
 }
 
 export const projectsData = [
     {
-      title: "Installation de gazon synthétique au stade MUGUNGA",
+      id: 1,
+      title: "Gazon synthétique au stade MUGUNGA",
       price: "2021 - 2023",
       location: "Goma",
-      image: coming_soon_color
+      category: "Projets réalisés",
+      image: gazon_synth
     },
     {
+      id: 2,
       title: "Rénovation de l'HOTEL RESIDENCE",
       price: "2021 - A présent",
       location: "Bukavu",
-      image: coming_soon_color
+      category: "Projets en cours",
+      image: residence
     },
     {
-      title: "Contruction de murs de souténement pour la SNEL",
+      id: 3,
+      title: "Nouvelle salle BODEGA",
       price: "2024",
       location: "Bukavu",
-      image: coming_soon_color
+      category: "Projets réalisés",
+      image: bodega
     },
     {
-      title: "Adduction d'eau",
-      price: "2019",
-      location: "Bunia",
-      image: coming_soon_color
+      id: 4,
+      title: "Maintenance route GOMA-RUTSHURU",
+      price: "2019 - A présent",
+      location: "Nord-Kivu",
+      category: "Projets réalisés",
+      image: maintenance
     },
     {
-      title: "Protection de conduites d'eau DN250 pour la REGIDESO",
+      id: 5,
+      title: "Road Survey à KALAMB0 (23KM)",
       price: "2020",
-      location: "Bunia",
-      image: coming_soon_color
+      location: "Sud-Kivu",
+      category: "Etudes réalisées",
+      image: kalambo
     },
     {
-      title: "Construction de caniveaux et de bordures de route (12KM)",
+      id: 6,
+      title: "Adduction d'eau pour la REGIDESO",
       price: "2020",
-      location: "Goma - Kibumba",
-      image: coming_soon_color
+      location: "Ituri",
+      category: "Projets réalisés",
+      image: adduction
     },
     
     {
-      title: "Conception de projets immobiliers à Kalambo",
+      id: 7,
+      title: "Construction d'un mur de soutenement à BAGIRA",
       price: "2016",
-      location: "Bukavu",
-      image: coming_soon_color
+      location: "Sud-Kivu",
+      category: "Projets réalisés",
+      image: mur
     },
     {
-      title: "Conception et construction de maisons résidentielles.",
-      price: "2018",
-      location: "Bukavu & Goma",
-      image: coming_soon_color
+      id: 8,
+      title: "Mur de soutenement à l'HOTEL RESIDENCE",
+      price: "2021",
+      location: "Sud-Kivu",
+      category: "Projets réalisés",
+      image: mur2
     },
-    {
-      title: "Construction des clotures à Kalambo.",
-      price: "2018",
-      location: "Bukavu",
-      image: coming_soon_color
-    },
-    
-    {
-      title: "Construction des clotures, postes de garde et blocs sanitaires (Liquid Telecom).",
-      price: "2018",
-      location: "Muanda",
-      image: coming_soon_color
-    },
-    {
-      title: "Travaux de terrassement et revetement en grave.",
-      price: "2018",
-      location: "Muanda",
-      image: coming_soon_color
-    },
-    
     
   ];
 
