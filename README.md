@@ -1,12 +1,27 @@
-# React + Vite
+# M&K Consulting sarl
+![mklogo](https://github.com/user-attachments/assets/7a8037da-a56d-4a09-a736-54edfafa235f)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+Official website for **M&K Consulting sarl**, a construction company based in the Democratic Republic of Congo.  
+The platform showcases the company’s services, projects, and provides an easy way for clients to get in touch.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+- Responsive and modern UI built with **React + Vite**
+- Styled with **TailwindCSS**
+- Contact form integration via **Web3Forms**
+- Planned backend features using **Supabase** (authentication, database, etc.)
+- Optimized for speed and accessibility
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React, Vite  
+- **Styling:** TailwindCSS  
+- **Forms:** Web3Forms  
+- **Database (planned):** Supabase  
+
+---
