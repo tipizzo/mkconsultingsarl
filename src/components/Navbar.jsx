@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div className='absolute top-0 left-0 w-full z-10'>
         <div className='container mx-auto flex justify-between items-center py-4 px-4 md:px-8 lg:px-6 bg-transparent'>
-            <img src={assets.logo} alt="" style={{width: "180px", height: "110px"}} />
+            <img src={assets.logo} alt="" className='w-[145px] h-[110px] md:w-[180px] md:h-[110px]'/>
             <ul className='hidden md:flex gap-7 text-white'>
                 <a href='#Header' className='cursor-pointer hover:text-gray-400 font-bold'>Accueil</a>
                 <a href='#About' className='cursor-pointer hover:text-gray-400 font-bold'>A Propos de nous</a>
