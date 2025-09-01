@@ -1,5 +1,6 @@
 # M&K Consulting sarl
-![mklogo_image](https://github.com/user-attachments/assets/9430eb6f-0604-4952-b20e-2eb5a84201a1)
+![mklogo](https://github.com/user-attachments/assets/7a8037da-a56d-4a09-a736-54edfafa235f)
+
 
 
 
