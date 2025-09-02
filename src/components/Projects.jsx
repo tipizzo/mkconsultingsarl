@@ -1,13 +1,13 @@
 import React, { use, useEffect, useState } from 'react'
 import { assets, projectsData } from '../assets/assets'
-import { motion } from 'framer-motion'
-import { useNavigate } from 'react-router-dom'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const Projects = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0)
     const [cardsToShow, setCardsToShow] = useState(1);
     const [category, setCategory] = useState("Projets en cours");
+    const [selectedProject, setSelectedProject] = useState(null)
 
 
     // Filter projects by category
@@ -38,7 +38,6 @@ const Projects = () => {
         setCurrentIndex((prevIndex) => prevIndex === 0 ? filteredProjects.length - 1 : prevIndex - 1)
     }
 
-
     return (
         <motion.div
             initial={{ opacity: 0, x: -200 }}
@@ -58,8 +57,8 @@ const Projects = () => {
                             setCurrentIndex(0)
                         }}
                         className={`px-3 py-3 text-sm md:text-md font-medium cursor-pointer w-full sm:w-auto ${category === cat
-                                ? "bg-blue-600 text-white shadow-md"
-                                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                            ? "bg-blue-600 text-white shadow-md"
+                            : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                             }`}
                     >
                         {cat}
@@ -83,9 +82,10 @@ const Projects = () => {
                     style={{ transform: `translateX(-${(currentIndex * 100) / cardsToShow}% )` }}
                 >
                     {filteredProjects.map((project, index) => (
-                        <div 
-                        className='relative flex-shrink-0 w-full sm:w-1/4' 
-                        key={index}
+                        <div
+                            className='relative flex-shrink-0 w-full sm:w-1/4'
+                            key={index}
+                            onClick={() => setSelectedProject(project)}
                         >
                             <img src={project.image} alt={project.title} className='w-full h-auto mb-14' />
                             <div className='absolute left-0 right-0 bottom-5 flex justify-center'>
@@ -100,6 +100,46 @@ const Projects = () => {
                     ))}
                 </div>
             </div>
+            {/* Project details modal */}
+
+
+            {selectedProject && (
+                <AnimatePresence>
+                    <motion.div
+                    className='fixed inset-0 bg-black/70 flex justify-center items-center z-50'
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    exit={{ opacity: 0 }}
+                    >
+                        <motion.div 
+                        className='bg-gray-100 rounded-lg shadow-lg max-w-lg w-full max-h-[80vh] overflow-y-auto p-6 relative'
+                        initial={{ opacity: 0, scale: 0.9, y:50 }}
+                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        exit={{ opacity: 0, scale: 0.9, y: 50 }}
+                        transition={{ duration: 0.3 }}
+                        > 
+                            {/* Close button */}
+                            <button
+                                onClick={() => setSelectedProject(null)}
+                                className='absolute top-3 right-3 text-gray-600 hover:text-black text- cursor-pointer'
+                            >
+                                &times;
+                            </button>
+                            <h2 className='text-2xl font-bold mb-2'>{selectedProject.title}</h2>
+                            <img
+                                src={selectedProject.image}
+                                alt={selectedProject.title}
+                                className='w-full h-60 object-cover rounded-md mb-4'
+                            />
+                            <p>{selectedProject.price} | {selectedProject.location}</p>
+                            <p>{selectedProject.description1}</p>
+                            <img src={selectedProject.image2} className='w-full h-60 object-cover rounded0md mb-4' />
+                            <p>{selectedProject.description2}</p>
+                            <img src={selectedProject.image3} className='w-full h-60 object-cover rounded0md mb-4' />
+                        </motion.div>
+                    </motion.div>
+                </AnimatePresence>
+            )}
         </motion.div>
     )
 }
